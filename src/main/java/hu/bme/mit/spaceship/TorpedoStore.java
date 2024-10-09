@@ -31,11 +31,9 @@ public class TorpedoStore {
   }
 
   public boolean fire(int numberOfTorpedos){
-
     boolean success = false;
-   // innen kitöröltem a fölös sort.
+    // innen kitöröltem a fölös sort.
     // simulate random overheating of the launcher bay which prevents firing
-    
     double r = generator.nextDouble();
 
     if (r >= FAILURE_RATE) {
