@@ -8,6 +8,7 @@ import java.util.Random;
 * (Deliberately contains bugs.)
 */
 public class TorpedoStore {
+  //kihoztam a Randomot osztály szintűvé.
  private Random generator = new Random();
 
   // rate of failing to fire torpedos [0.0, 1.0]
@@ -32,7 +33,7 @@ public class TorpedoStore {
   public boolean fire(int numberOfTorpedos){
 
     boolean success = false;
-
+   // innen kitöröltem a fölös sort.
     // simulate random overheating of the launcher bay which prevents firing
     
     double r = generator.nextDouble();
